@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "61c70ed4-0c26-4dbe-920e-eed5bf38f19b",
+		"name": "BlogApi Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33066742"
+	},
+	"item": [
+		{
+			"name": "Post Blog",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"10 Tips for Productive Remote Work\",\r\n    \"description\": \"Discover ten practical tips to enhance your productivity while working remotely.\",\r\n    \"category\": \"Productivity\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/blogposts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogposts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all blogs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Mastering the Basics of Cooking: A Beginner's Guide\",\r\n    \"description\": \"Learn essential cooking techniques and tips to kickstart your culinary journey.\",\r\n    \"category\": \"Cooking\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/blogposts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogposts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get blog post by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/blogposts/664645b9fd9320c9ecb5e7a2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogposts",
+						"664645b9fd9320c9ecb5e7a2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update blog by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Benefits of Remote Work\",\r\n    \"description\": \"Explore the various benefits of remote work, including increased flexibility, improved work-life balance, and cost savings.\",\r\n    \"category\": \"Productivity\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/blogposts/664644d3fd9320c9ecb5e7a0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogposts",
+						"664644d3fd9320c9ecb5e7a0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete blog by Id",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Benefits of Remote Work\",\r\n    \"description\": \"Explore the various benefits of remote work, including increased flexibility, improved work-life balance, and cost savings.\",\r\n    \"category\": \"Productivity\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/blogposts/664644d3fd9320c9ecb5e7a0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogposts",
+						"664644d3fd9320c9ecb5e7a0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
